@@ -6,6 +6,9 @@ import SideBar from "../components/SideBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
 
 const {
   image,
@@ -18,9 +21,15 @@ const {
 ---
 
 <!doctype html>
-<html lang="en" data-theme="forest">
+<html lang={lang} data-theme="forest">
   <head>
-    <BaseHead title={title} description={description} image={image} , ogType={ogType} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      ,
+      ogType={ogType}
+    />
     {TRANSITION_API && <ViewTransitions />}
   </head>
   <body>
