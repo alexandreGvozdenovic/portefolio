@@ -6,6 +6,7 @@ export const defaultLang = "fr";
 export const showDefaultLang = false;
 export const ui = {
   en: {
+    "404.message": "The page you're looking for couldn't be found.",
     "cv.profile": "Profile",
     "cv.description": "I am toto",
     "cv.formations": "Education",
@@ -58,6 +59,7 @@ export const ui = {
     "nav.twitter": "Twitter",
   },
   fr: {
+    "404.message": "La page que vous recherchez n'a pas pu être trouvée.",
     "cv.profile": "Profil",
     "cv.description": "Je suis toto",
     "cv.formations": "Formations",
