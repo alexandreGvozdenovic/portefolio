@@ -1,0 +1,14 @@
+---
+import HorizontalCard from "@components/HorizontalCard.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<HorizontalCard
+  badges={[{ label: "app", url: "https://you-re-a-wizard-harry.web.app/" }]}
+  title="You're a wizard"
+  img="/hp.png"
+  desc="Application web basé sur l'api Harry potter https://github.com/KostaSav/hp-api"
+/>
