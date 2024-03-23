@@ -7,8 +7,6 @@ export const showDefaultLang = false;
 export const ui = {
   en: {
     "404.message": "The page you're looking for couldn't be found.",
-    "cv.profile": "Profile",
-    "cv.description": "I am toto",
     "cv.formations": "Education",
     "cv.lacapsule.title":
       "Coding Bootcamp - Fullstack JavaScript web and mobile developer",
@@ -55,13 +53,21 @@ export const ui = {
       "In charge of an ERP solution, TMA management for existing customers and project management for new customers",
     "cv.sncf.subtitle": "September 2017 - June 2019 SNCF Réseau, Paris",
     "cv.sncf.description": "Incident / Problem Manager within a 5-person team",
+    "cyclofix.desc":
+      "Cyclofix connects users of bicycles and electric scooters with experienced repairers who go everywhere, whether at home, at work or on the street.",
+    "revolugo.desc":
+      "Revolugo simplifies the accommodation booking experience at all the world's biggest events, ensuring that everyone's needs are met with an affordable, comprehensive and personalized offer.",
+    "interfast.desc":
+      "Interfast is the simplest, most complete solution for every building trade",
+    "wizard.desc":
+      "Web application based on the Harry potter api https://github.com/KostaSav/hp-api",
     "nav.about": "About",
-    "nav.twitter": "Twitter",
+    "index.me": "I am Alexandre Gvozdenovic",
+    "index.position": "Fullstack developer @Paris",
+    "index.lastProjects": "My last projects",
   },
   fr: {
     "404.message": "La page que vous recherchez n'a pas pu être trouvée.",
-    "cv.profile": "Profil",
-    "cv.description": "Je suis toto",
     "cv.formations": "Formations",
     "cv.lacapsule.title":
       "Coding Bootcamp - Développeur web et mobile Fullstack JavaScript",
@@ -114,7 +120,23 @@ export const ui = {
     "cv.sncf.subtitle": "Septembre 2017 - Juin 2019  SNCF Réseau, Paris",
     "cv.sncf.description":
       "Incident / Problème Manager au sein d'une équipe de 5 personnes",
+    "cyclofix.title": "Cyclofix",
+    "cyclofix.desc":
+      "Cyclofix connecte utilisateurs de vélos, trottinettes électriques à des réparateurs expérimentés qui se déplacent partout, que ce soit à domicile, au travail ou dans la rue.",
+    "revolugo.title": "Revolugo",
+    "revolugo.desc":
+      "Revolugo simplifies l’expérience de réservation d'hébergement sur tous les plus grands événements mondiaux, en garantissant que les besoins de chacun soient comblés par une offre abordable ,fournie et personnalisée..",
+    "interfast.title": "Interfast",
+    "interfast.desc":
+      "Interfast est la solution la plus simple et la plus complète qui s'adapte à chaque métier du bâtiment.",
+    "wizard.title": "You're a wizard",
+    "wizard.desc":
+      "Application web basé sur l'api Harry potter https://github.com/KostaSav/hp-api",
     "nav.home": "Accueil",
     "nav.about": "À propos",
+    "index.hello": "Hello 👋",
+    "index.me": "Je suis Alexandre Gvozdenovic",
+    "index.position": "Développeur Fullstack @Paris",
+    "index.lastProjects": "Mes derniers projets",
   },
 } as const;

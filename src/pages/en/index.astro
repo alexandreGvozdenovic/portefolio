@@ -3,25 +3,23 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import RevolugoCard from "@components/project-cards/RevolugoCard.astro";
 import CyclofixCard from "@components/project-cards/CyclofixCard.astro";
 import IntefastCard from "@components/project-cards/IntefastCard.astro";
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hello 👋</div>
-    <div class="text-5xl font-bold">Je suis Alexandre Gvozdenovic</div>
-    <div class="text-3xl py-3 font-bold">Développeur Fullstack</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal
-        Portfolio Website built with Astro and TailwindCSS. Create in minutes a website
-        with Blog, CV, Project Section, Store and RSS Feed. I hope you find it useful!
-      </text>
-    </div>
+  <div class="pb-6 mt-5">
+    <div class="text-xl py-1">{t("index.hello")}</div>
+    <div class="text-5xl font-bold">{t("index.me")}</div>
+    <div class="text-2xl py-3">{t("index.position")}</div>
   </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-2">
-      Mes derniers projets {"</>"}
+      {t("index.lastProjects")}
+      {"</>"}
     </div>
   </div>
   <RevolugoCard />
