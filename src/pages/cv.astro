@@ -35,27 +35,52 @@ const t = useTranslations(lang);
 
   <div class="time-line-container mb-10">
     <TimeLineElement
+      title={t("cv.betterway.title")}
+      subtitle={t("cv.betterway.subtitle")}
+    >
+      <p class="mb-2">
+        {t("cv.betterway.description")}
+      </p>
+      <ul class="mb-2 space-y-2">
+        <li>
+          <span class="font-semibold text-primary">{t("cv.betterway.task.1.title")} :</span> {t("cv.betterway.task.1.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.betterway.task.2.title")} :</span> {t("cv.betterway.task.2.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.betterway.task.3.title")} :</span> {t("cv.betterway.task.3.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.betterway.task.4.title")} :</span> {t("cv.betterway.task.4.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.betterway.task.5.title")} :</span> {t("cv.betterway.task.5.desc")}
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
       title={t("cv.revolugo.title")}
       subtitle={t("cv.revolugo.subtitle")}
     >
       <p class="mb-2">
         {t("cv.revolugo.description")}
       </p>
-      <ul class="mb-2">
+      <ul class="mb-2 space-y-2">
         <li>
-          {t("cv.revolugo.task.1")}
+          <span class="font-semibold text-primary">{t("cv.revolugo.task.1.title")} :</span> {t("cv.revolugo.task.1.desc")}
         </li>
         <li>
-          {t("cv.revolugo.task.2")}
+          <span class="font-semibold text-primary">{t("cv.revolugo.task.2.title")} :</span> {t("cv.revolugo.task.2.desc")}
         </li>
         <li>
-          {t("cv.revolugo.task.3")}
+          <span class="font-semibold text-primary">{t("cv.revolugo.task.3.title")} :</span> {t("cv.revolugo.task.3.desc")}
         </li>
         <li>
-          {t("cv.revolugo.task.4")}
+          <span class="font-semibold text-primary">{t("cv.revolugo.task.4.title")} :</span> {t("cv.revolugo.task.4.desc")}
         </li>
         <li>
-          {t("cv.revolugo.task.5")}
+          <span class="font-semibold text-primary">{t("cv.revolugo.task.5.title")} :</span> {t("cv.revolugo.task.5.desc")}
         </li>
       </ul>
     </TimeLineElement>
@@ -66,15 +91,21 @@ const t = useTranslations(lang);
       <p class="mb-2">
         {t("cv.cyclofix.description")}
       </p>
-      <ul class="mb-2">
+      <ul class="mb-2 space-y-2">
         <li>
-          {t("cv.cyclofix.task.1")}
+          <span class="font-semibold text-primary">{t("cv.cyclofix.task.1.title")} :</span> {t("cv.cyclofix.task.1.desc")}
         </li>
         <li>
-          {t("cv.cyclofix.task.2")}
+          <span class="font-semibold text-primary">{t("cv.cyclofix.task.2.title")} :</span> {t("cv.cyclofix.task.2.desc")}
         </li>
         <li>
-          {t("cv.cyclofix.task.3")}
+          <span class="font-semibold text-primary">{t("cv.cyclofix.task.3.title")} :</span> {t("cv.cyclofix.task.3.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.cyclofix.task.4.title")} :</span> {t("cv.cyclofix.task.4.desc")}
+        </li>
+        <li>
+          <span class="font-semibold text-primary">{t("cv.cyclofix.task.5.title")} :</span> {t("cv.cyclofix.task.5.desc")}
         </li>
       </ul>
     </TimeLineElement>
@@ -131,17 +162,20 @@ const t = useTranslations(lang);
     <li>TypeScript</li>
     <li>React</li>
     <li>React Native</li>
-    <li>Vue2</li>
-    <li>Vue3</li>
+    <li>Vue.js (2/3)</li>
     <li>Next.js</li>
     <li>Nuxt.js</li>
-    <li>Storybook</li>
     <li>Node.js</li>
-    <li>Express</li>
-    <li>GraphQl</li>
-    <li>PostgreSQL</li>
     <li>Sequelize</li>
-    <li>Mongo DB</li>
-    <li>Git</li>
+    <li>AWS (Lambda, DynamoDB, SQS)</li>
+    <li>DDD</li>
+    <li>Event Sourcing</li>
+    <li>Datadog</li>
+    <li>Jest</li>
+    <li>Cucumber</li>
+    <li>Cypress</li>
+    <li>Storybook</li>
+    <li>Redux</li>
+    <li>i18n</li>
   </ul>
 </BaseLayout>

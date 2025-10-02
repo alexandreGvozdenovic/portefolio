@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import BetterwayCard from "@components/project-cards/BetterwayCard.astro";
 import RevolugoCard from "@components/project-cards/RevolugoCard.astro";
 import CyclofixCard from "@components/project-cards/CyclofixCard.astro";
 import IntefastCard from "@components/project-cards/IntefastCard.astro";
@@ -22,6 +23,8 @@ const t = useTranslations(lang);
       {"</>"}
     </div>
   </div>
+  <BetterwayCard />
+  <div class="divider my-0"></div>
   <RevolugoCard />
   <div class="divider my-0"></div>
   <CyclofixCard />
